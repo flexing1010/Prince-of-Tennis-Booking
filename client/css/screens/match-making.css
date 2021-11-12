@@ -1,0 +1,8 @@
+.match-setting {
+  width: 50%;
+}
+.match-making-form {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+}

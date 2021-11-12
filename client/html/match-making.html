@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="matching.html">매칭</a>
+      <a href="court.html">코트정보</a>
+      <a href="login.html">로그인</a>
+      <a href="register.html">회원가입</a>
+    </nav>
+    <div class="match-setting">
+      <form class="match-making-form" action="">
+        <div>
+          <label for="game-type">게임종류:</label>
+          <input id="game-type" type="text" />
+        </div>
+        <div>
+          <label for="court">코트:</label>
+          <input id="court" type="text" />
+        </div>
+        <div>
+          <label for="match-date">날짜:</label>
+          <input id="match-date" type="text" />
+        </div>
+        <div>
+          <label for="pay-method">코트비 분배방식:</label>
+          <input id="pay-method" type="text" />
+        </div>
+        <div>
+          <label for="ntrp">NTRP:</label>
+          <input id="ntrp" type="text" />
+        </div>
+        <button type="submit">매치생성</button>
+      </form>
+
+      <script src="../js/match-making.js"></script>
+    </div>
+  </body>
+</html>
