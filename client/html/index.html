@@ -13,5 +13,35 @@
       <a href="login.html">로그인</a>
       <a href="register.html">회원가입</a>
     </nav>
+
+    <main>
+      <!-- 매칭이 없다면 -->
+      <section class="no-matching">
+        <h4>매칭 요청이 없습니다.</h4>
+        <div class="no-matching__buttons">
+          <button id="to-match-making">매치 만들기</button>
+          <button id="to-waiting-room">매치 대기실</button>
+        </div>
+      </section>
+
+      <section class="my-matching">
+        <div class="my-matching__header">
+          <h4>현재 매칭 중입니다.</h4>
+        </div>
+        <div class="my-matching__body">
+          <span>매칭 정보</span>
+          <ul class="match-info">
+            <li>복식</li>
+            <li>덕양구 토당시립코트</li>
+            <li>2021-11-13 토 20시</li>
+            <li>패자몰빵!</li>
+            <li>NTRP 3~4</li>
+          </ul>
+          <button>상세보기</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>

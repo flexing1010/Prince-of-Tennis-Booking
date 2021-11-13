@@ -23,7 +23,11 @@
         </div>
         <div>
           <label for="court">코트:</label>
-          <input id="court" type="text" />
+          <input
+            id="court"
+            type="text"
+            placeholder="지역,코트이름을 적어주세요"
+          />
         </div>
         <div>
           <label for="match-date">날짜:</label>
@@ -31,11 +35,23 @@
         </div>
         <div>
           <label for="pay-method">코트비 분배방식:</label>
-          <input id="pay-method" type="text" />
+          <select name="" id="pay-method">
+            <option value="">선택해주세요</option>
+            <option value="split-evenly">N분의 1</option>
+            <option value="loser-pays-all">패자몰빵!</option>
+          </select>
         </div>
         <div>
           <label for="ntrp">NTRP:</label>
-          <input id="ntrp" type="text" />
+          <select name="" id="ntrp">
+            <option value="1.5">1.5</option>
+            <option value="2.0">2.0</option>
+            <option value="2.5">2.5</option>
+            <option value="3.0">3.0</option>
+            <option value="3.5">3.5</option>
+            <option value="4.0">4.0</option>
+            <option value="4.5">4.5</option>
+          </select>
         </div>
         <button type="submit">매치생성</button>
       </form>
