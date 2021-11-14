@@ -15,23 +15,28 @@
     </nav>
 
     <h4>대기실</h4>
-    <section class="my-matching">
-      <div class="my-matching__header">
-        <h4>xx님의 매칭 요청</h4>
-      </div>
-      <div class="my-matching__body">
-        <span>매칭 정보</span>
-        <ul class="match-info">
-          <li>복식</li>
-          <li>덕양구 토당시립코트</li>
-          <li>2021-11-13 토 20시</li>
-          <li>패자몰빵!</li>
-          <li>NTRP 3~4</li>
-        </ul>
-        <button>상세보기</button>
-      </div>
-    </section>
+    <ul class="match-list">
+      <template id="match-infocard">
+        <li>
+          <div class="match__header">
+            <h4></h4>
+          </div>
+          <div class="match__body">
+            <span></span>
+            <div class="match-details">
+              <div class="game-type"></div>
+              <div class="court"></div>
+              <div class="match-date"></div>
+              <div class="pay-method"></div>
+              <div class="ntrp"></div>
+            </div>
+            <button id="abc">상세보기</button>
+          </div>
+        </li>
+      </template>
+    </ul>
 
     <div>목록</div>
+    <script type="module" src="../js/waiting-room.js"></script>
   </body>
 </html>
