@@ -5,7 +5,7 @@ const handleMatchMakingBtn = () => {
   location.href = "match_making.html";
 };
 const handleWaitingRoomButton = () => {
-  location.href = "waiting_room.html";
+  location.href = "matching.html";
 };
 
 matchMakingButton.addEventListener("click", handleMatchMakingBtn);
