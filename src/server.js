@@ -9,4 +9,5 @@ app.listen(5000, () => {
 
 // app.set("views",__dirname +)
 
+app.use(express.static("src"));
 app.use("/", rootRouter);

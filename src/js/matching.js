@@ -1,4 +1,4 @@
-import { matchInfo } from "../../json/matching_info.js";
+import { matchInfo } from "../json/matching_info.js";
 
 const matchList = document.querySelector(".match-list");
 const joinBtn = document.querySelector(".join-button");
@@ -38,4 +38,7 @@ if (matchInfo) {
   createListWithTemplate(matchInfo);
 }
 
-joinBtn.addEventListener("click", () => (location.href = "waiting-room.html"));
+joinBtn.addEventListener(
+  "click",
+  () => (location.href = "/matching/match-making")
+);
