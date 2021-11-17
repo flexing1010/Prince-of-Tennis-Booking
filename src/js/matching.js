@@ -1,7 +1,11 @@
 import { matchInfo } from "../json/matching_info.js";
 
 const matchList = document.querySelector(".match-list");
-const joinBtn = document.querySelector(".join-button");
+
+const handleJoinBtn = (e) => {
+  const matchId = e.target.parentNode.id;
+  location.href = `/waiting-room/${matchId}`;
+};
 
 const createListWithTemplate = (matchInfo) => {
   const ul = document.createElement("ul");
@@ -9,6 +13,7 @@ const createListWithTemplate = (matchInfo) => {
   const matchTemplate = document.getElementById("match-infocard");
   matchInfo.forEach((match) => {
     const infoCard = document.importNode(matchTemplate.content, true);
+    infoCard.querySelector("li").id = `${match.matchId}`;
     infoCard.querySelector(
       ".match__header h4"
     ).textContent = `${match.creator}님의 매치 요청`;
@@ -29,6 +34,10 @@ const createListWithTemplate = (matchInfo) => {
       ".match-details .ntrp"
     ).textContent = `${match.NTRP}`;
 
+    const joinBtn = infoCard.querySelector(".join-button");
+
+    joinBtn.addEventListener("click", handleJoinBtn);
+
     ul.appendChild(infoCard);
   });
   matchList.replaceWith(ul);
@@ -37,8 +46,3 @@ const createListWithTemplate = (matchInfo) => {
 if (matchInfo) {
   createListWithTemplate(matchInfo);
 }
-
-joinBtn.addEventListener(
-  "click",
-  () => (location.href = "/matching/match-making")
-);
