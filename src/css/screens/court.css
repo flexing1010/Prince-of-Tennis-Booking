@@ -1,0 +1,9 @@
+.info {
+  display: flex;
+}
+
+.info div {
+  width: 9%;
+  text-align: right;
+  margin-right: 10px;
+}

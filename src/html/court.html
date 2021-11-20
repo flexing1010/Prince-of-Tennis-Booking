@@ -14,5 +14,29 @@
       <a href="/register">회원가입</a>
     </nav>
     <h4>코트 정보</h4>
+    <ul class="court-list">
+      <template id="court-infocard">
+        <li>
+          <h4 class="court-name"></h4>
+          <div class="info">
+            <div>주소:</div>
+            <span class="address"></span>
+          </div>
+          <div class="info">
+            <div>코트 종류:</div>
+            <span class="surface"></span>
+          </div>
+          <div class="info">
+            <div>코트 수:</div>
+            <span class="number"></span>
+          </div>
+          <div class="info">
+            <div>부대시설:</div>
+            <span class="facility"></span>
+          </div>
+        </li>
+      </template>
+    </ul>
+    <script type="module" src="../js/court.js"></script>
   </body>
 </html>
