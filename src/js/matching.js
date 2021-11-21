@@ -32,7 +32,7 @@ const createListWithTemplate = (matchInfo) => {
     ).textContent = `${match.payMethod}`;
     infoCard.querySelector(
       ".match-details .ntrp"
-    ).textContent = `${match.NTRP}`;
+    ).textContent = `${match.ntrp}`;
 
     const joinBtn = infoCard.querySelector(".join-button");
 

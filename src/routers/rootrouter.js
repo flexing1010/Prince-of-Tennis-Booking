@@ -22,16 +22,18 @@ rootRouter.get("/matching/match-making", (req, res) => {
   res.sendFile(__dirname + "/src/html/match-making.html");
 });
 
-rootRouter.get("/waiting-room/:id", (req, res) => {
-  const { id } = req.params;
-
-  res.sendFile(__dirname + "/src/html/waiting-room.html", "matchInfo");
-});
 // rootRouter.get("/waiting-room/:id", (req, res) => {
-//   const { id } = req.params;
-//   console.log(id);
-//   res.json(matchInfo);
-// });
+rootRouter.get("/waiting-room/:id", (req, res) => {
+  res.sendFile(__dirname + "/src/html/waiting-room.html");
+});
+rootRouter.get("/waiting-room/:id/info", (req, res) => {
+  const { id } = req.params;
+  const targetMatch = matchInfo.find(
+    (element) => element.matchId === parseInt(id)
+  );
+
+  res.json(targetMatch);
+});
 
 rootRouter.get("/login", (req, res) => {
   res.sendFile(__dirname + "/src/html/login.html");
