@@ -2,6 +2,7 @@ import express from "express";
 // import { dirname } from "path";
 import path from "path";
 import { matchInfo } from "../json/matching_info.js";
+import { users } from "../json/user.js";
 
 const __dirname = path.resolve();
 
@@ -57,6 +58,20 @@ rootRouter.post("/create-profile", (req, res) => {
     res.redirect("/");
   }
   // console.log(req.body);
+});
+
+rootRouter.post("/login", (req, res) => {
+  const loginUser = req.body;
+  const user = users.find((user) => {
+    return user.username === loginUser.username;
+  });
+
+  if (user && user.password === loginUser.password) {
+    console.log("환영합니다!!");
+    return res.redirect("/");
+  } else {
+    console.log("아이디/비밀번호가 잘못되었습니다");
+  }
 });
 
 export default rootRouter;
