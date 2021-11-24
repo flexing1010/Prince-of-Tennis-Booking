@@ -9,10 +9,10 @@ export const courtInfo = [
   },
   {
     courtId: 2,
-    courtName: "토당시립코트",
+    courtName: "충장 체육공원",
     address: "고양시 덕양구",
     surface: "하드코트",
-    number: "6면",
+    number: "4면",
     facility: "휴게실",
   },
 ];
