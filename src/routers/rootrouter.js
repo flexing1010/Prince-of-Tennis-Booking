@@ -62,14 +62,17 @@ rootRouter.post("/create-profile", (req, res) => {
 
 rootRouter.post("/login", (req, res) => {
   const loginUser = req.body;
+  console.log(loginUser);
   const user = users.find((user) => {
     return user.username === loginUser.username;
   });
 
   if (user && user.password === loginUser.password) {
     console.log("환영합니다!!");
-    return res.redirect("/");
+    // return res.redirect("/");
+    res.send({ message: "환영합니다!!" });
   } else {
+    res.send({ message: "아이디/비밀번호가 잘못되었습니다" });
     console.log("아이디/비밀번호가 잘못되었습니다");
   }
 });
