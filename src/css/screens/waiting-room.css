@@ -1,0 +1,12 @@
+.participants {
+  display: flex;
+  gap: 1rem;
+}
+
+.chat-container {
+  margin-top: 1rem;
+}
+
+#player-chat {
+  margin-bottom: 1rem;
+}

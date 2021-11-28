@@ -1,3 +1,5 @@
 /* Screens */
 @import "./screens/match-making.css";
+@import "./screens/waiting-room.css";
 @import "./screens/court.css";
+@import "./screens/register.css";

@@ -1,0 +1,8 @@
+.register-input {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+.register-input input {
+  padding: 0.3rem;
+}

@@ -8,6 +8,10 @@ export const matchInfo = [
     matchDate: "2021-11-14(일) 16:00-18:00",
     payMethod: "N분의 1",
     ntrp: "3.0",
+    chats: [
+      { writer: "kjzon1", content: "반갑습니다" },
+      { writer: "kjzon2", content: "잘 부탁드립니다" },
+    ],
   },
   {
     matchId: 2,
@@ -18,5 +22,9 @@ export const matchInfo = [
     matchDate: "2021-11-13(토) 16:00-18:00",
     payMethod: "패자몰빵",
     ntrp: "3.0",
+    chats: [
+      { writer: "Jina", content: "반갑습니다" },
+      { writer: "kjzon1", content: "잘 부탁드립니다" },
+    ],
   },
 ];

@@ -14,7 +14,8 @@
       <a href="/register">회원가입</a>
     </nav>
 
-    <form action="/register/complete" class="register-form">
+    <!-- <form action="/register/complete" class="register-form"> -->
+    <form class="register-form">
       <div class="register-input">
         <input type="text" placeholder="아이디" />
         <input type="text" placeholder="이름" />
@@ -62,10 +63,11 @@
       >
 
       <div>
-        <label><input type="checkbox" /> 동의합니다. (필수)</label>
+        <label><input type="checkbox" name="terms" /> 동의합니다. (필수)</label>
       </div>
 
       <button>회원가입</button>
     </form>
+    <script src="../js/register.js"></script>
   </body>
 </html>
